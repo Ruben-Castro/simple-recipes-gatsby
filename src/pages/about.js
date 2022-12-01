@@ -1,10 +1,11 @@
-import React from 'react'
+import * as React from "react"
 import Layout from '../components/Layout'
-import Navbar from '../components/Navbar'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import RecipesList from '../components/RecipesList'
 
-const About = () => {
+const About = ({ data: { allContentfulRecipe: { nodes: recipes } } }) => {
+    console.log(recipes)
     return (
         <>
             <Layout>
@@ -25,11 +26,36 @@ const About = () => {
                         <StaticImage className="about-img" placeholder='blurred' src="../assets/images/about.jpeg" alt="person pouring salt in bowl" />
 
                     </section>
+                    <section className='featured-recipes'>
+                        <h5>Look at this awesomesauce!</h5>
+                        <RecipesList recipes={recipes} />
+                    </section>
                 </main>
             </Layout>
         </>
 
     )
 }
+
+export const query = graphql`
+  {
+    allContentfulRecipe(sort: {title: ASC}, filter: {featured: {eq: true}}) {
+      nodes {
+        id
+        title
+        prepTime
+        cookTime
+        content {
+          tags
+        }
+        image {
+          gatsbyImageData(layout: CONSTRAINED, placeholder: TRACED_SVG)
+        }
+      }
+    }
+  }
+`
+
+
 
 export default About
