@@ -39,20 +39,7 @@ module.exports = {
         path: `${__dirname}/src/assets/images`
       }
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `data`,
-    //     path: `${__dirname}/src/assets/data`
-    //   }
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `styles`,
-    //     path: `${__dirname}/src/assets/css`
-    //   }
-    // },
+
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -63,6 +50,17 @@ module.exports = {
 
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`
+    `gatsby-transformer-sharp`,
+
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        mode: `async`,
+        enableListener: true,
+
+        // use this to preload css files from google fonts 
+        preconnect: ["https://fonts.googleapis.com/css?family=Montserrat:400|Inconsolata:400"],
+      }
+    }
   ],
 }

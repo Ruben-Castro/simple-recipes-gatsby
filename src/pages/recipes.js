@@ -1,11 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import AllRecipes from '../components/AllRecipes'
+import SEO from '../components/SEO'
 const recipes = () => {
     return (
         <Layout>
-            <h1>Recipes Page</h1>
-            <AllRecipes />
+            <SEO title="Recipes" />
+            <main className='page'>
+
+                <AllRecipes />
+            </main>
+
         </Layout>
 
     )

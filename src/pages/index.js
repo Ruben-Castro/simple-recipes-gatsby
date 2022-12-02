@@ -1,12 +1,12 @@
 import * as React from "react"
-import { Link } from 'gatsby'
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
-import Gallery from "../components/Gallery"
 import AllRecipes from "../components/AllRecipes"
+import SEO from "../components/SEO"
 export default function Home() {
   return (
     <Layout >
+      <SEO title="Home" description={"page"} />
       <main className="page">
         <header className="hero">
           <StaticImage src="../assets/images/main.jpeg" alt="eggs" className="hero-img" placeholder="tracedSVG" layout="fullWidth" />
