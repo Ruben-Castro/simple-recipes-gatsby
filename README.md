@@ -9,9 +9,9 @@ in this project we used the Gatsby hello-world starter template. you can find th
 
 [Simple Recipes](https://main.d1b4ei562dmp2d.amplifyapp.com/)
 
-## 🚀 What I Learned 
+## What I Learned 
 
-1.  **Basics of Gatsby.js**
+### Fundamentals of Gatsby.js
 
   1) creating reusable components in create. 
   2) creating pages to use components. 
@@ -22,7 +22,7 @@ in this project we used the Gatsby hello-world starter template. you can find th
 
    
 
-2.  **Connect Gatsby Site to Contentful CMS.**
+### Connect Gatsby Site to Contentful CMS
 
    1) how to set up content models in Contentful CMS 
    2) use the gatsby-source-contentful plugin to connect Gatsby to CMS 
@@ -30,14 +30,14 @@ in this project we used the Gatsby hello-world starter template. you can find th
    4) create api keys in contentful
    5) upload and publish data on contentful 
 
-3.  **Basic SEO**
+### Basic SEO
   1) use Helmet.js to add page title and description to meta tag and improve site SEO.
 
-4.  **CSS Optimization**
+### CSS Optimization
   1) used gatsby-omni-font-loader to preload css files and fonts from google improving site performance.
 
     
-5.  **Deploy on AWS Amplify**
+### AWS Continuous Integration Deployment using Amplify
 
   1) change the container image for aws amplify
   2) set environment variable on aws amplify 
