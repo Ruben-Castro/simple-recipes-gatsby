@@ -7,7 +7,7 @@ This is a tutorial project from Gatsby.js Tutorial and Projects course on Udemy 
 
 in this project we used the Gatsby hello-world starter template. you can find the live site at 
 
-[Simple Recipes]([https://main.d1b4ei562dmp2d.amplifyapp.com/)
+[Simple Recipes](https://main.d1b4ei562dmp2d.amplifyapp.com/)
 
 ## 🚀 What I Learned 
 
