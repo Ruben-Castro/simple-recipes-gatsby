@@ -3,9 +3,11 @@
   Simple Recipes
 </h1>
 
-This is a tutorial project from Gatsby.js Tutorial and Projects course on udemy created by John Smilga
+This is a tutorial project from Gatsby.js Tutorial and Projects course on Udemy created by John Smilga
 
-in this project we used the Gatsby hello-world starter template.
+in this project we used the Gatsby hello-world starter template. you can find the live site at 
+
+[Simple Recipes]([https://main.d1b4ei562dmp2d.amplifyapp.com/)
 
 ## 🚀 What I Learned 
 
@@ -29,11 +31,16 @@ in this project we used the Gatsby hello-world starter template.
    5) upload and publish data on contentful 
 
 3.  **Basic SEO**
-    1) use Helmet.js to add page title and description to meta tag and improve site SEO.
+  1) use Helmet.js to add page title and description to meta tag and improve site SEO.
 
 4.  **CSS Optimization**
-    1) used gatsby-omni-font-loader to preload css files and fonts from google improving site performance.
+  1) used gatsby-omni-font-loader to preload css files and fonts from google improving site performance.
 
     
+5.  **Deploy on AWS Amplify**
 
+  1) change the container image for aws amplify
+  2) set environment variable on aws amplify 
+  3) depoloy application to production.
+  4) setup a small backend to handle form submission on aws amplify 
 
